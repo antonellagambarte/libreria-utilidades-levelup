@@ -19,6 +19,9 @@ export function createStack<T>() {
       },
       clear(): void {
         items.length = 0;
+      },
+      getArray(): T[] {
+        return [...items];
       }
     };
   }
