@@ -9,5 +9,10 @@ export default defineConfig({
       name: "utilities-library",
     },
   },
+  resolve:{
+    alias: {
+        '@src': resolve(__dirname, '/src'),
+    }
+},
   plugins: [dts({ outDir: "dist" })],
 });
