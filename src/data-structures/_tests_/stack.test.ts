@@ -1,4 +1,4 @@
-import { createStack } from '../stack';
+import { createStack } from '../index';
 
 
 describe('createStack',()=>{

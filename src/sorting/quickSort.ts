@@ -1,5 +1,9 @@
-export default function quickSort<T>(arr: T[]): T[] {
+export function quickSort<T>(arr: T[]): T[] {
     if (arr.length <= 1) {
+      return arr;
+    }
+    const allSameType = arr.every(item => typeof item === typeof arr[0]);
+    if (!allSameType) {
       return arr;
     }
   

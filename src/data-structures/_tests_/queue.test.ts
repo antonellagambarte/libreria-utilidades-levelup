@@ -1,4 +1,4 @@
-import { createQueue } from '../';
+import { createQueue } from '../index';
 
 
 describe('createQueue',()=>{
